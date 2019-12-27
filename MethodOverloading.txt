@@ -1,0 +1,28 @@
+public class Methodoverloading {
+	void add(int x,int y)
+	{
+		System.out.println("int "+(x+y));
+		System.out.println();
+	}
+	void add(double x,double y)
+	{
+		System.out.println("double "+(x+y));
+		System.out.println();
+	}
+	void add(String x,String y)
+	{
+		System.out.println("String "+(x+y));
+		System.out.println();
+	}
+	public static void main(String[] args) {
+		Methodoverloading methods = new Methodoverloading();
+		Methodoverloading methods1 = new Methodoverloading();
+		Methodoverloading methods2 = new Methodoverloading();
+		
+		methods.add(1010,1010);
+		methods1.add(10.5, 20.8);
+		methods2.add("Deloitte", " Hyderabad");
+		
+	}
+
+}
